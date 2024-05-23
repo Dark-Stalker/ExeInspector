@@ -37,7 +37,7 @@ public class PeHandler {
     PeFile peFile = PeFile.form(file);
     LinkedHashMap<String, String> information = new LinkedHashMap<>();
     information.put("Имя файла", file.getName());
-    information.put("Путь к файла", file.getAbsolutePath());
+    information.put("Путь к файлу", file.getAbsolutePath());
     information.put("Размер файла", ByteConverter.byteCountToDisplaySize(AttributesUtils.getFileSize(file.getAbsolutePath())));
     information.put("Дата создания", AttributesUtils.getCreationTime(file.getAbsolutePath()));
     information.put("Дата последнего изменения", AttributesUtils.getLastModifiedTime(file.getAbsolutePath()));
